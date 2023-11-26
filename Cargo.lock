@@ -520,6 +520,12 @@ dependencies = [
 ]
 
 [[package]]
+name = "data-encoding"
+version = "2.5.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "7e962a19be5cfc3f3bf6dd8f61eb50107f356ad6270fbb3ed41476571db78be5"
+
+[[package]]
 name = "der"
 version = "0.7.6"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -770,9 +776,8 @@ dependencies = [
 
 [[package]]
 name = "ethers"
-version = "2.0.4"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "8d5486fdc149826f38c388f26a7df72534ee3f20d3a3f72539376fa7b3bbc43d"
+version = "2.0.7"
+source = "git+https://github.com/yzevm/ethers-rs.git?branch=v2.0.7#b7b2246293fcaf9f57340647849b47893580e237"
 dependencies = [
  "ethers-addressbook",
  "ethers-contract",
@@ -786,9 +791,8 @@ dependencies = [
 
 [[package]]
 name = "ethers-addressbook"
-version = "2.0.4"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "1c66a426b824a0f6d1361ad74b6b01adfd26c44ee1e14c3662dcf28406763ec5"
+version = "2.0.7"
+source = "git+https://github.com/yzevm/ethers-rs.git?branch=v2.0.7#b7b2246293fcaf9f57340647849b47893580e237"
 dependencies = [
  "ethers-core",
  "once_cell",
@@ -798,9 +802,8 @@ dependencies = [
 
 [[package]]
 name = "ethers-contract"
-version = "2.0.4"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "dfa43e2e69632492d7b38e59465d125a0066cf4c477390ece00d3acbd11b338b"
+version = "2.0.7"
+source = "git+https://github.com/yzevm/ethers-rs.git?branch=v2.0.7#b7b2246293fcaf9f57340647849b47893580e237"
 dependencies = [
  "ethers-contract-abigen",
  "ethers-contract-derive",
@@ -817,16 +820,14 @@ dependencies = [
 
 [[package]]
 name = "ethers-contract-abigen"
-version = "2.0.4"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "2edb8fdbf77459819a443234b461171a024476bfc12f1853b889a62c6e1185ff"
+version = "2.0.7"
+source = "git+https://github.com/yzevm/ethers-rs.git?branch=v2.0.7#b7b2246293fcaf9f57340647849b47893580e237"
 dependencies = [
  "Inflector",
  "dunce",
  "ethers-core",
  "ethers-etherscan",
  "eyre",
- "getrandom",
  "hex",
  "prettyplease",
  "proc-macro2",
@@ -836,17 +837,14 @@ dependencies = [
  "serde",
  "serde_json",
  "syn 2.0.16",
- "tokio",
  "toml",
- "url",
  "walkdir",
 ]
 
 [[package]]
 name = "ethers-contract-derive"
-version = "2.0.4"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "939b0c37746929f869285ee37d270b7c998d80cc7404c2e20dda8efe93e3b295"
+version = "2.0.7"
+source = "git+https://github.com/yzevm/ethers-rs.git?branch=v2.0.7#b7b2246293fcaf9f57340647849b47893580e237"
 dependencies = [
  "Inflector",
  "ethers-contract-abigen",
@@ -860,9 +858,8 @@ dependencies = [
 
 [[package]]
 name = "ethers-core"
-version = "2.0.4"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "198ea9efa8480fa69f73d31d41b1601dace13d053c6fe4be6f5878d9dfcf0108"
+version = "2.0.7"
+source = "git+https://github.com/yzevm/ethers-rs.git?branch=v2.0.7#b7b2246293fcaf9f57340647849b47893580e237"
 dependencies = [
  "arrayvec",
  "bytes",
@@ -871,7 +868,6 @@ dependencies = [
  "elliptic-curve",
  "ethabi",
  "generic-array",
- "getrandom",
  "hex",
  "k256",
  "num_enum",
@@ -891,13 +887,10 @@ dependencies = [
 
 [[package]]
 name = "ethers-etherscan"
-version = "2.0.4"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "196a21d6939ab78b7a1e4c45c2b33b0c2dd821a2e1af7c896f06721e1ba2a0c7"
+version = "2.0.7"
+source = "git+https://github.com/yzevm/ethers-rs.git?branch=v2.0.7#b7b2246293fcaf9f57340647849b47893580e237"
 dependencies = [
  "ethers-core",
- "ethers-solc",
- "getrandom",
  "reqwest",
  "semver",
  "serde",
@@ -908,9 +901,8 @@ dependencies = [
 
 [[package]]
 name = "ethers-middleware"
-version = "2.0.4"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "75594cc450992fc7de701c9145de612325fd8a18be765b8ae78767ba2b74876f"
+version = "2.0.7"
+source = "git+https://github.com/yzevm/ethers-rs.git?branch=v2.0.7#b7b2246293fcaf9f57340647849b47893580e237"
 dependencies = [
  "async-trait",
  "auto_impl",
@@ -935,9 +927,8 @@ dependencies = [
 
 [[package]]
 name = "ethers-providers"
-version = "2.0.4"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "1009041f40476b972b5d79346cc512e97c662b1a0a2f78285eabe9a122909783"
+version = "2.0.7"
+source = "git+https://github.com/yzevm/ethers-rs.git?branch=v2.0.7#b7b2246293fcaf9f57340647849b47893580e237"
 dependencies = [
  "async-trait",
  "auto_impl",
@@ -949,7 +940,6 @@ dependencies = [
  "futures-core",
  "futures-timer",
  "futures-util",
- "getrandom",
  "hashers",
  "hex",
  "http",
@@ -974,9 +964,8 @@ dependencies = [
 
 [[package]]
 name = "ethers-signers"
-version = "2.0.4"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "c3bd11ad6929f01f01be74bb00d02bbd6552f22de030865c898b340a3a592db1"
+version = "2.0.7"
+source = "git+https://github.com/yzevm/ethers-rs.git?branch=v2.0.7#b7b2246293fcaf9f57340647849b47893580e237"
 dependencies = [
  "async-trait",
  "coins-bip32",
@@ -993,14 +982,12 @@ dependencies = [
 
 [[package]]
 name = "ethers-solc"
-version = "2.0.4"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "2284784306de73d8ad1bc792ecc1b87da0268185683698d60fd096d23d168c99"
+version = "2.0.7"
+source = "git+https://github.com/yzevm/ethers-rs.git?branch=v2.0.7#b7b2246293fcaf9f57340647849b47893580e237"
 dependencies = [
  "cfg-if",
  "dunce",
  "ethers-core",
- "getrandom",
  "glob",
  "hex",
  "home",
@@ -1427,9 +1414,9 @@ checksum = "0646026eb1b3eea4cd9ba47912ea5ce9cc07713d105b1a14698f4e6433d348b7"
 dependencies = [
  "http",
  "hyper",
- "rustls 0.21.1",
+ "rustls",
  "tokio",
- "tokio-rustls 0.24.0",
+ "tokio-rustls",
 ]
 
 [[package]]
@@ -1638,9 +1625,6 @@ name = "lalrpop-util"
 version = "0.19.12"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "d3c48237b9604c5a4702de6b824e02006c3214327564636aef27c1028a8fa0ed"
-dependencies = [
- "regex",
-]
 
 [[package]]
 name = "lazy_static"
@@ -2295,19 +2279,19 @@ dependencies = [
  "once_cell",
  "percent-encoding",
  "pin-project-lite",
- "rustls 0.21.1",
+ "rustls",
  "rustls-pemfile",
  "serde",
  "serde_json",
  "serde_urlencoded",
  "tokio",
- "tokio-rustls 0.24.0",
+ "tokio-rustls",
  "tower-service",
  "url",
  "wasm-bindgen",
  "wasm-bindgen-futures",
  "web-sys",
- "webpki-roots",
+ "webpki-roots 0.22.6",
  "winreg",
 ]
 
@@ -2412,18 +2396,6 @@ dependencies = [
  "libc",
  "linux-raw-sys",
  "windows-sys 0.48.0",
-]
-
-[[package]]
-name = "rustls"
-version = "0.20.8"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "fff78fc74d175294f4e83b28343315ffcfb114b156f0185e9741cb5570f50e2f"
-dependencies = [
- "log",
- "ring",
- "sct",
- "webpki",
 ]
 
 [[package]]
@@ -2723,9 +2695,9 @@ dependencies = [
 
 [[package]]
 name = "solang-parser"
-version = "0.2.4"
+version = "0.3.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "8c5ead679f39243782be98c2689e592fc0fc9489ca2e47c9e027bd30f948df31"
+checksum = "4a94494913728908efa7a25a2dd2e4f037e714897985c24273c40596638ed909"
 dependencies = [
  "itertools",
  "lalrpop",
@@ -2962,39 +2934,27 @@ dependencies = [
 
 [[package]]
 name = "tokio-rustls"
-version = "0.23.4"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "c43ee83903113e03984cb9e5cebe6c04a5116269e900e3ddba8f068a62adda59"
-dependencies = [
- "rustls 0.20.8",
- "tokio",
- "webpki",
-]
-
-[[package]]
-name = "tokio-rustls"
 version = "0.24.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "e0d409377ff5b1e3ca6437aa86c1eb7d40c134bfec254e44c830defa92669db5"
 dependencies = [
- "rustls 0.21.1",
+ "rustls",
  "tokio",
 ]
 
 [[package]]
 name = "tokio-tungstenite"
-version = "0.18.0"
+version = "0.19.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "54319c93411147bced34cb5609a80e0a8e44c5999c93903a81cd866630ec0bfd"
+checksum = "ec509ac96e9a0c43427c74f003127d953a265737636129424288d27cb5c4b12c"
 dependencies = [
  "futures-util",
  "log",
- "rustls 0.20.8",
+ "rustls",
  "tokio",
- "tokio-rustls 0.23.4",
+ "tokio-rustls",
  "tungstenite",
- "webpki",
- "webpki-roots",
+ "webpki-roots 0.23.1",
 ]
 
 [[package]]
@@ -3101,18 +3061,18 @@ checksum = "3528ecfd12c466c6f163363caf2d02a71161dd5e1cc6ae7b34207ea2d42d81ed"
 
 [[package]]
 name = "tungstenite"
-version = "0.18.0"
+version = "0.19.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "30ee6ab729cd4cf0fd55218530c4522ed30b7b6081752839b68fcec8d0960788"
+checksum = "15fba1a6d6bb030745759a9a2a588bfe8490fc8b4751a277db3a0be1c9ebbf67"
 dependencies = [
- "base64 0.13.1",
  "byteorder",
  "bytes",
+ "data-encoding",
  "http",
  "httparse",
  "log",
  "rand",
- "rustls 0.20.8",
+ "rustls",
  "sha1",
  "thiserror",
  "url",
@@ -3173,9 +3133,8 @@ checksum = "f962df74c8c05a667b5ee8bcf162993134c104e96440b663c8daa176dc772d8c"
 
 [[package]]
 name = "uniswap_v3_math"
-version = "0.2.26"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "684d41b0464b275f63364477efb9260ea2c53e8203e841edc58422b65cba509e"
+version = "0.4.0"
+source = "git+https://github.com/yzevm/uniswap-v3-math.git?branch=may8-and-ethers-v2.0.7#bdc2a7ef62c2c4d4f0e4fd5e2d0664ea8d0c2c4d"
 dependencies = [
  "ethers",
  "ruint",
@@ -3340,6 +3299,15 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "b6c71e40d7d2c34a5106301fb632274ca37242cd0c9d3e64dbece371a40a2d87"
 dependencies = [
  "webpki",
+]
+
+[[package]]
+name = "webpki-roots"
+version = "0.23.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "b03058f88386e5ff5310d9111d53f48b17d732b401aeb83a8d5190f2ac459338"
+dependencies = [
+ "rustls-webpki",
 ]
 
 [[package]]
